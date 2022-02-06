@@ -15,6 +15,7 @@ public class DeleteExample {
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce", "root", "admin");
 		
 		Statement stm = con.createStatement();
+		//DeleteQuery
 		stm.executeUpdate("Delete from eproduct where name='Tablet'");
 		
 		ResultSet result = stm.executeQuery("select * from eproduct");

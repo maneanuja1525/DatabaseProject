@@ -20,7 +20,7 @@ public class InsertExample {
 		stm.executeUpdate("insert into eproduct(name,price,date_added)values('Tablet','3000',now())");
 		ResultSet result = stm.executeQuery("select * from eproduct");
 		
-		System.out.println("Product Name"+"\t Price");
+		System.out.println("Name"+"\t Price");
 		while(result.next()) {
 			
 			System.out.println(result.getString("name")+"\t"+ result.getString("price"));
